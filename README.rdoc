@@ -1,9 +1,9 @@
 Warning: you should require 'minitest/autorun' instead. Warning: or add 'gem "minitest"' before 'require "minitest/autorun"' 
 
-spec/spec_helper.rbに
+(in spec/spec_helper.rb) 
 require 'minitest/autorun'
 
-Gemfileに
+(in Gemfile)
 gem 'shoulda-matchers'
 
 bundle update
