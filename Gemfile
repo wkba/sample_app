@@ -57,3 +57,8 @@ group :development do
   gem 'spring'
 end
 gem 'shoulda-matchers', '~> 2.6.0'
+group :development do
+  gem 'guard-rspec', require: false # guardでrspecを動かす
+  gem 'terminal-notifier'
+  gem 'terminal-notifier-guard'  # デスクトップ通知を行う
+end
