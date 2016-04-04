@@ -50,3 +50,9 @@ classメソッド
 4.4.5
 アトリビュートアクセサ
 
+5.2
+foobar.js.coffee
+上の拡張子の場合、CoffeeScriptプロセッサ経由で実行されます。
+foobar.js.erb.coffee
+上の拡張子の場合は、CoffeeScriptとERbの両方で実行されます (コードは右から左へと実行されますので、この例ではCoffeeScriptが最初に実行されます)。
+
