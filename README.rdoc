@@ -23,7 +23,6 @@ GuardにSporkを導入する
 
 4.3.1 
 >> "fooxbarxbazx".split('x')
-=> ["foo", "bar", "baz"]
 
 4.3.4 次に、data-turbolinks-trackにおけるキーと値のペアの表記が、旧式のハッシュロケット (=>) スタイルになっている点が不思議です。実は、以下のような新しいハッシュ記法を使用すると、
 data-turbolinks-track: true
