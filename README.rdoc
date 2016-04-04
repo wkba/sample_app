@@ -8,3 +8,45 @@ gem 'shoulda-matchers'
 
 bundle update
 bundle
+
+3.23　provide関数
+layoutに動的にパラメータを引渡したいような場合
+view → layout
+呼び元
+ yield(:key)
+呼び先
+ provide(:key, value)
+ 
+http://qiita.com/sue738/items/eed0f2a4dc312e9bbe26
+<title><%= yield(:title).presence || "デフォルトタイトル" %></title>
+GuardにSporkを導入する
+
+4.3.1 
+>> "fooxbarxbazx".split('x')
+=> ["foo", "bar", "baz"]
+
+4.3.4 次に、data-turbolinks-trackにおけるキーと値のペアの表記が、旧式のハッシュロケット (=>) スタイルになっている点が不思議です。実は、以下のような新しいハッシュ記法を使用すると、
+data-turbolinks-track: true
+:data-turbolinks-trackというシンボルを作成しようとしますが、シンボルではハイフンを使用できないため、この記法は無効です。このため、以下のような旧式のハッシュロケット記法を使用するしかないのです。
+"data-turbolinks-track" => true
+
+4.4.1
+classメソッド
+>> class Word < String             # WordクラスはStringクラスを継承する。
+>>   # 文字列が鏡文字であればtrueを返す。
+>>   def palindrome?
+>>     self == self.reverse        # selfは文字列自身を表す。
+>>   end
+>> end
+
+4.4.3
+>> class String
+>>   # 文字列が回文であればtrueを返す
+>>   def palindrome?
+>>     self == self.reverse
+>>   end
+>> end
+
+4.4.5
+アトリビュートアクセサ
+
