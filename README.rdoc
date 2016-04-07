@@ -57,4 +57,4 @@ foobar.js.erb.coffee
 
 5.3.2
 match '/help', to: 'static_pages#help', via: 'get'
-
+難しかった。ここもう一度読む。
