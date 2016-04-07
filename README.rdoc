@@ -58,3 +58,11 @@ foobar.js.erb.coffee
 5.3.2
 match '/help', to: 'static_pages#help', via: 'get'
 難しかった。ここもう一度読む。
+
+#subject { page }
+#it { should have_content('Sample App') }
+subject { page }と記述したことにより、shouldの呼び出しは自動的に、Capybara (3.2.1)により提供されるpage変数を使用します。
+
+    Capybara::ElementNotFound:
+       Unable to find xpath "/html"
+--> beforeの書き忘れ
