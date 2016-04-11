@@ -54,6 +54,8 @@ foobar.js.coffee
 上の拡張子の場合、CoffeeScriptプロセッサ経由で実行されます。
 foobar.js.erb.coffee
 上の拡張子の場合は、CoffeeScriptとERbの両方で実行されます (コードは右から左へと実行されますので、この例ではCoffeeScriptが最初に実行されます)。
+<% provide(:title, 'Help') %>
+--> provideし忘れてた。
 
 5.3.2
 match '/help', to: 'static_pages#help', via: 'get'
@@ -66,3 +68,5 @@ subject { page }と記述したことにより、shouldの呼び出しは自動�
     Capybara::ElementNotFound:
        Unable to find xpath "/html"
 --> beforeの書き忘れ
+
+
