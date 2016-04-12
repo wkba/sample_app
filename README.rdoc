@@ -69,4 +69,3 @@ subject { page }と記述したことにより、shouldの呼び出しは自動�
        Unable to find xpath "/html"
 --> beforeの書き忘れ
 
-
